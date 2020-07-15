@@ -1,0 +1,101 @@
+.container {
+    position: absolute;
+    width: 90%;
+    z-index: 1;
+    max-width: 800px;
+    background: rgba(255,255,255,0.8);
+    border: 10px solid rgb(66,66,66);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 3rem 4rem;
+}
+
+.header {
+    font-size: 3.2rem;
+    color: black;
+    font-variant: small-caps;
+    line-height: 1;
+}
+
+.tagline {
+    color: rgb(187, 4, 4);
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+}
+
+.left {
+    right: auto;
+    left: 10%;
+}
+
+.right {
+    left: auto;
+    right: 10%;
+}
+
+.text {
+    line-height: 2;
+    margin-top: 1.5rem;
+    font-weight: lighter;
+    z-index: 1;
+}
+
+.img {
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    height: 70%;
+    top: 5%;
+    max-width: 95%;
+}
+
+.imgRight {
+    right: 5%;
+}
+
+.imgLeft {
+    left: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    .img {
+        max-width: 90%;
+    }
+    .imgRight {
+        right: auto !important;
+        left: 10% !important;
+    }
+    .imgLeft {
+        left: auto !important;
+        right: 10% !important;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .left {
+        right: auto;
+        left: 0%;
+    }
+    .right {
+        left: auto;
+        right: 0%;
+    }    
+    .img {
+        max-width: 85%;
+    }
+    .container {
+        border: 0px solid rgb(26, 33, 60);
+    }
+    .imgRight {
+        right: auto !important;
+        left: 15% !important;
+        object-position: left;
+    }
+    .imgLeft {
+        left: auto !important;
+        right: 15% !important;
+        object-position: right;
+    }
+}

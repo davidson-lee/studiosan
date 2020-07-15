@@ -1,0 +1,112 @@
+.container {
+    width: 50%;
+    max-width: 50rem;
+    margin-top: 0;
+    padding: 2rem 5%;
+    background: rgba(255, 255, 255, 0.75);
+    border: 10px solid rgb(66, 66, 66);
+    box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.3);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+}
+
+.formrow {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0.5rem 0rem;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fieldSm {
+    width: 45%;
+    height: 100%;
+}
+
+.fieldLg {
+    width: 95%;
+    height: 100%;
+}
+
+.textarea {
+    margin-left: 5%;
+    height: 10rem;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 0rem;
+    margin-bottom: 10px;
+}
+
+.submit {
+    color: white;
+    width: 95%;
+    height: 100%;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 1rem;
+    font-variant: small-caps;
+    background: black;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks {
+    color: white;
+    width: 95%;
+    height: 100%;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+    font-size: 1rem;
+    font-variant: small-caps;
+    background: black;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.5);
+}
+
+.loader {
+    width: 1rem;
+    height: 1rem;
+    border: 0.3rem solid white;
+    border-top: 0.3rem solid blue;
+    border-radius: 50%;
+    animation: spin 2s ease infinite;
+}
+
+.error {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 25rem;
+    height: 6rem;
+    max-width: 330px;
+    border-radius: 10px;
+    padding: 0.7rem 1rem;
+    border: 5px solid rgb(187, 4, 4);
+    background: rgba(255,235,235);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        margin-top: 2rem;
+        width: 100%;
+        border: 0px solid rgb(66, 66, 66);
+    }
+}

@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+}
+
+.divider {
+    margin-top: 1.5rem;
+    height: 1px;
+    background: rgb(66,66,66);
+}
+
+.cont {
+    background: rgba(255, 255, 255);
+    padding: 4rem 10%;
+    text-align: center;
+}
+
+.header {
+    font-size: 3rem;
+    color: black;
+    font-variant: small-caps;
+    line-height: 1;
+}
+
+.text {
+    color: rgb(66, 66, 66);
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+    font-weight: lighter;
+}

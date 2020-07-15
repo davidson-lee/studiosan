@@ -1,0 +1,141 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: rgba(0,0,0,0);
+  font-family: proxima-nova, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+  html, body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  html, body {
+    font-size: 12px;
+  }
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding-top: 4rem;
+  background: rgb(235, 242, 255);
+}
+
+.section-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 50rem;
+  padding: 8rem 20%;
+}
+
+@media only screen and (max-width: 800px) {
+  .section-container {
+    height: 60vh;
+    padding: 5rem 0 5rem 10%;
+  }
+  .section-container:nth-child(even) {
+    padding: 5rem 10% 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-container {
+    height: 60vh;
+    padding: 5rem 0 5rem 10%;
+  }
+  .section-container:nth-child(even) {
+    padding: 5rem 10% 5rem 0;
+  }
+}
+
+
+.heading-lg {
+  font-size: 3rem;
+  color: black;
+}
+
+.heading-md {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-variant: small-caps;
+  color: black;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  color: rgb(40,40,40);
+}
+
+input, textarea {
+  font-family: 'Proxima Nova';
+  font-size: 1rem;
+  transition: 0.3s;
+  resize: none;
+  color: rgb(40,40,40);
+  padding: 0.5rem 0.5rem;
+  border-radius: 5px; 
+  border: 2px solid rgba(0,0,0,0.3);
+}
+
+input:hover {
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+textarea:hover {
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid rgba(0,0,0,0.5);
+}
+
+::placeholder {
+  color: rgb(140,140,140);
+  opacity: 1;
+}
+
+.box-container {
+  z-index: 2;
+  width: 20%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: blur(3px);
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+
+.top-fix {
+  background: rgba(0,0,0,0);
+  width: 100%;
+  height: calc(100vh - 2rem);
+  min-height: 560px;
+}
